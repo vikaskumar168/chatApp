@@ -73,7 +73,7 @@ const SideDrawer = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        `https://chatapp-backend-ox47.onrender.com/api/user?search=${search}`,
         config
       );
       console.log("API Response Data:", data);
@@ -103,7 +103,7 @@ const SideDrawer = () => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:5000/api/chat`,
+        `https://chatapp-backend-ox47.onrender.com/api/chat`,
         { userId },
         config
       );
